@@ -6,7 +6,7 @@ import {
   userCart,
   decreaseProudctQty,
 } from "../Controllers/cart.js";
-import { Authenticated } from '../Middlewares/Auth.js';
+import { Authenticated } from '../Middlewares/auth.js';
 
 
 
