@@ -9,12 +9,12 @@ const SearchProduct = () => {
 
   const {term} = useParams()
 
-  // console.log(useParams())
+  // console.log(term.trim())
 
   useEffect(() => {
     setSearchProduct(
       products.filter(
-        (data) => data?.title?.toLowerCase().includes(term.toLowerCase()))
+        (data) => data?.category?.toLowerCase().includes(term.trim().toLowerCase()) || data?.title?.toLowerCase().includes(term.trim().toLowerCase()))
     );
   }, [term, products]);
 
