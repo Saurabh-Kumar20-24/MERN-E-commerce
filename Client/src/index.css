@@ -1,65 +1,71 @@
-body{
-  background-color: black;
-  color: white;
- 
+body {
+  background-color: #121212; /* Deep neutral black-gray */
+  color: #f5f5f5; /* Soft off-white text for readability */
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
-.nav{
+
+.nav {
   width: 100%;
 }
-.nav_bar{
+
+.nav_bar {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  background-color: rgb(70, 25, 113);
+  background-color: #1e1e2f; /* Modern dark navy-gray for navbar */
 }
 
-.search_bar{
+.search_bar {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border-radius: 20px;
-    padding: 10px;
-    width: 30%;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a40; /* Slightly lighter gray for contrast */
+  border-radius: 20px;
+  padding: 10px;
+  width: 30%;
 }
-.search_bar input{
+
+.search_bar input {
   border: none;
-  background-color: black;
-  color: white;
+  background-color: #2a2a40;
+  color: #ffffff; /* Clean white for input text */
   width: 400px;
 }
 
-.search_bar input::placeholder{
+.search_bar input::placeholder {
   font-weight: bold;
-  color: white;
+  color: #9ca3b0; /* Subtle gray placeholder */
 }
-.search_bar input:focus{
+
+.search_bar input:focus {
   outline: none;
 }
 
-.sub_bar{
+.sub_bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: blueviolet;
+  background-color: #0d6efd; /* Bootstrap blue accent for professionalism */
 }
-.sub_bar .items{
+
+.sub_bar .items {
   padding: 10px;
   font-weight: bold;
+  color: #ffffff;
 }
-.sub_bar .items:hover{
-  background-color: black;
+
+.sub_bar .items:hover {
+  background-color: #084298; /* Deep blue hover effect */
   cursor: pointer;
 }
 
-td{
-  vertical-align:middle;
+td {
+  vertical-align: middle;
   cursor: pointer;
 }
